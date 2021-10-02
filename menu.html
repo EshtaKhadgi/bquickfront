@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body{margin-top:20px;}
+/*
+Foods menu
+*/
+
+.food-menu-card {
+    padding: 30px 20px;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.food-menu-card .media {
+    margin-bottom: 20px;
+}
+
+.food-menu-card .media .img-fluid {
+    border-radius: 3px;
+    width: 80px;
+}
+
+.food-menu-card .media .d-flex {
+    position: relative;
+}
+
+.food-menu-card .media .d-flex:before {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 50%;
+}
+
+.food-menu-card .media h3 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-right: 1.07143rem;
+    background-color: #000;
+    z-index: 2;
+}
+
+.food-menu-card .media strong {
+    background-color: #000;
+    display: block;
+    padding-left: 15px;
+    z-index: 2;
+    position: relative;
+}
+
+.tabs-menu-nav > li > a {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    border-bottom: 3px solid transparent;
+    opacity: 0.5;
+}
+
+.tabs-menu-nav > li > a.active {
+    opacity: 1;
+    border-bottom-color: #db2e2e;
+}
+.media-body, p {
+    color: #999;
+}
+                                    
+	</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">BQuiCK</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="menu.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="resturant.html">Nearest Workshops</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  &nbsp
+ <div class="dropdown">
+     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user"> &nbsp Profile</i>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+</button>
+    
+  <ul class="dropdown-menu">
+    <li class="dd"><a href="profile.html">Setting</a></li>
+    <li class="dd"><a href="index.html">Logout</a></li>
+  </ul>
+</div> 
+    
+    
+  </div>
+</nav>
+
+<br>
+<br>
+<div class="container">
+                <div class="center-title">
+                    <h2 class="text-white">Our Services</h2>
+                    <p class="text-white-gray">Everyday at your service.</p>
+                </div>
+                <div class="food-menu-card">
+                    <div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav  tabs-menu-nav justify-content-center mb30" role="tablist">
+                            <li class="nav-item" role="presentation"><a class="nav-link active show" href="#breakfast" aria-controls="breakfast" role="tab" data-toggle="tab" aria-selected="true">Services</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#lunch" aria-controls="lunch" role="tab" data-toggle="tab" aria-selected="false"> Services</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#dinner" aria-controls="dinner" role="tab" data-toggle="tab" aria-selected="false">Services</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade active show" id="breakfast">
+                                <div class="row">
+                                    <div class="col-md-6 mb20">
+                                        <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/g1.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Car wash</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.65</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Car wash</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/g2.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Car wash</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.90</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Car wash</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/g3.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Car wash</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.200</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Car wash</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/g4.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Scrambled eggs</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.300</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Car wash</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/g1.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Car wash</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.100</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Car wash</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                    </div>
+                                      <div class="col-md-6 mb20">
+                                        <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/g2.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Car wash</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.350</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Car wash</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/g3.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Car wash</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.500</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Car wash</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/g2.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Car wash</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.80</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Car wash</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/g3.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Car wash</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.65</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Car wash</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/g4.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Car wash</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.400</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Car wash</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="lunch">
+                                   <div class="row">
+                                    <div class="col-md-6 mb20">
+                                        <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/l1.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Fried Chicken Burger</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.300</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Burger House</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/l2.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400"> Chicken MoMo</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.180</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Monster Meals</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/l3.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Veg pizza</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.320</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Pizza Corner</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/l4.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Fried chicken</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.500</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Chicken Station</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/l5.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Tokbokki</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.600</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Everest Villa</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                    </div>
+                                      <div class="col-md-6 mb20">
+                                        <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/l6.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Veg wrap</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.350</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Burger House</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/l7.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Chowmin</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.200</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">NPP</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/l8.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Salad</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.250</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Red mug</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/l9.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Ramen</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.320</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Luma</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/l10.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Newari Khaja set</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.400</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">NewaChe</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                    </div>
+                                </div>
+                            </div>   
+                            <div role="tabpanel" class="tab-pane fade" id="dinner">
+                                   <div class="row">
+                                    <div class="col-md-6 mb20">
+                                        <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/d1.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Grilled Chicken</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.1200</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Chicken Station</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/d2.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Sushi</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.800</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Sushi Corner</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/d3.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Fried Rice</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.290</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Burger House</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/d4.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Chicken rice bowl</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.300</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">KFC</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/d5.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Kimbap</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.120</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Mr Kimbap</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                    </div>
+                                      <div class="col-md-6 mb20">
+                                        <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/d6.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Veg roll</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.150</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">NPP</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/d7.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Taco</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.300</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">KFC</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100" href="">
+                                                <img class="img-fluid mr-4" width="80" src="images/d8.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Roasted chicken</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">Rs.1000</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Chicken Station</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                       
+                                      
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<br>
+<a href="add.html"><button>Book</button></a>
+<br>
+<br>
+<br>
+            <footer class="footer-distributed">
+
+      <div class="footer-right">
+
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a>
+        <a href="https://np.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
+
+
+      </div>
+
+      <div class="footer-left">
+
+        <p>BQuiCK &copy; 2015</p>
+      </div>
+
+    </footer>
+</body>
+</html>

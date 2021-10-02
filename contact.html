@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+  	body{
+		background-color: #cad5e6;
+	}
+	.contact{
+		padding: 4%;
+		height: 400px;
+	}
+	.col-md-3{
+		background: #ff9b00;
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+	}
+	.contact-info{
+		margin-top:10%;
+	}
+	.contact-info img{
+		margin-bottom: 15%;
+	}
+	.contact-info h2{
+		margin-bottom: 10%;
+	}
+	.col-md-9{
+		background: #fff;
+		padding: 3%;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+	}
+	.contact-form label{
+		font-weight:600;
+	}
+	.contact-form button{
+		background: #25274d;
+		color: #fff;
+		font-weight: 600;
+		width: 25%;
+	}
+	.contact-form button:focus{
+		box-shadow:none;
+	}
+  </style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">BQuiCK</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="menu.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="resturant.html">Nearest Workshops</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  &nbsp
+ <div class="dropdown">
+     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user"> &nbsp Profile</i>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+</button>
+
+    
+  <ul class="dropdown-menu">
+    <li class="dd"><a href="profile.html">Setting</a></li>
+    <li class="dd"><a href="index.html">Logout</a></li>
+  </ul>
+</div> 
+    
+    
+  </div>
+</nav>
+
+
+
+<div class="container contact">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="contact-info">
+				<img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+				<h2>Contact Us</h2>
+				<h4>We would love to hear from you !</h4>
+				<br>
+				<h6>Phone no: 9898454567, 9800123456</h6>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="contact-form">
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="fname">First Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="lname">Last Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="email">Email:</label>
+				  <div class="col-sm-10">
+					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="comment">Comment:</label>
+				  <div class="col-sm-10">
+					<textarea class="form-control" rows="5" id="comment"></textarea>
+				  </div>
+				</div>
+				<div class="form-group">        
+				  <div class="col-sm-offset-2 col-sm-10">
+					<a href="home.html"><button type="submit" class="btn btn-default">Submit</button></a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="footer-distributed">
+
+      <div class="footer-right">
+
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a>
+        <a href="https://np.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
+
+
+      </div>
+
+      <div class="footer-left">
+
+        <p>BQuiCK &copy; 2015</p>
+      </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>review</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+    <style type="text/css">
+        .rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 6vw;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+body {
+    background: #ffffff;
+    color: black
+}
+
+h2,
+p {
+    text-align: center
+}
+
+h2 {
+    margin-top: 80px
+}
+
+p {
+    font-size: 1.2rem
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 14px
+    }
+
+    p {
+        font-size: 12px
+    }
+}
+
+
+body{margin-top:20px;}
+
+.testimonials-v-2 {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.testi-slide {
+  text-align: center;
+}
+
+.testi-slide img {
+  width: 92px;
+  height: 92px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.testi-slide p {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  font-style: italic;
+}
+
+.testi-slide i {
+  color: #32c5d2;
+  margin-right: 10px;
+}
+
+.testi-slide h4 {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Lato", sans-serif !important;
+  font-style: italic;
+}
+
+.testi-slide .flex-control-paging li a {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  background: transparent !important;
+  border: 2px solid #ccc;
+  width: 8px;
+  height: 8px;
+}
+
+.testi-slide .flex-control-paging li a.flex-active {
+  background: transparent !important;
+  border: 2px solid #32c5d2;
+}
+
+.quote {
+  position: relative;
+}
+
+.quote blockquote {
+  padding: 0px;
+  border: 0;
+  margin: 0;
+  font-size: 14px;
+  font-style: italic;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.quote blockquote p {
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.quote blockquote:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 90px;
+  width: 0;
+  height: 0;
+  border-top: 0.83333em solid #ccc;
+  border-right: 0.86667em solid transparent;
+}
+
+.quote.green blockquote {
+  background-color: #32c5d2;
+}
+
+.quote.green blockquote:before {
+  border-top-color: #32c5d2;
+}
+
+.quote.dark blockquote {
+  background-color: #555;
+}
+
+.quote.dark blockquote:before {
+  border-top-color: #555;
+}
+
+.quote-footer {
+  margin: 10px 0;
+}
+
+.quote-footer .quote-author-img img {
+  float: left;
+  max-width: 90px;
+  width: 90px;
+  height: 90px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: -5px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.quote-footer h4 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.quote-footer p {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.shadow-none {
+    box-shadow: none
+}
+
+.name {
+    color: #007bff
+}
+
+.cursor:hover {
+    color: blue
+}
+
+.cursor {
+    cursor: pointer
+}
+
+.textarea {
+    resize: none
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">BQuiCK</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> 
+</nav>
+<br>
+<br>
+<a href="home.html"><button>Back</button></a>
+<a href="index.html"><button>Logout</button></a>
+<br>
+    <h2>Rate us </h2>
+<div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+</div>
+
+<br>
+<div class="bg-light p-2">
+                    <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="https://i.imgur.com/RpzrMR2.jpg" width="40"><textarea class="form-control ml-1 shadow-none textarea"></textarea></div>
+                    <div class="mt-2 text-right"><a href="home.html"><button class="btn btn-primary btn-sm shadow-none" type="button">Post comment</button></a><a href="home.html"><button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button></a></div>
+                </div>
+<br>
+<br>/
+<br>
+
+<div class="container">
+<div class="row">
+    <div class="col-md-4 margin-btm-20">
+        <div class="quote dark">
+            <blockquote>
+                <p>
+                   Seize the moment. Remember all those women on the ‘Titanic’ who waved off the dessert cart.
+                </p>
+            </blockquote>                        
+        </div>
+        <div class="quote-footer text-right">
+            <div class="quote-author-img">
+                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+            </div>
+            <h4>Ashish</h4>
+        </div>
+    </div><!--colored quote box col-->
+    <div class="col-md-4 margin-btm-20">
+        <div class="quote green">
+            <blockquote>
+                <p>
+                    Your diet is a bank account. Good food choices are good investments.                         
+                </p>
+            </blockquote>                        
+        </div>
+        <div class="quote-footer text-right">
+            <div class="quote-author-img">
+                <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
+            </div>
+            <h4>Sanjeeb</h4>
+        </div>
+    </div><!--colored quote box col-->
+    <div class="col-md-4 margin-btm-20">
+        <div class="quote dark">
+            <blockquote>
+                <p>
+                    Eat breakfast like a king, lunch like a prince, and dinner like a pauper.                          
+                </p>
+            </blockquote>                        
+        </div>
+        <div class="quote-footer text-right">
+            <div class="quote-author-img">
+                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
+            </div>
+            <h4>Rohit</h4>
+        </div>
+    </div><!--colored quote box col-->
+</div><!--testimonials row-->
+</div>
+
+
+
+<div class="container">
+            <div class="row">
+                <div class="col-md-4 margin-btm-20">
+                    <div class="quote dark">
+                        <blockquote>
+                            <p>
+                                If this is coffee, please bring me some tea; but if this is tea, please bring me some coffee.                         
+                            </p>
+                        </blockquote>                        
+                    </div>
+                    <div class="quote-footer text-right">
+                        <div class="quote-author-img">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="">
+                        </div>
+                        <h4>Prashant</h4>
+                    </div>
+                </div><!--colored quote box col-->
+                <div class="col-md-8 margin-btm-20">
+                    <div class="quote green">
+                        <blockquote>
+                            <p>
+                                I have made a lot of mistakes falling in love, and regretted most of them, but never the potatoes that went with them.                         
+                            </p>
+                        </blockquote>                        
+                    </div>
+                    <div class="quote-footer text-right">
+                        <div class="quote-author-img">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="">
+                        </div>
+                        <h4>Elika</h4>
+                    </div>
+                </div><!--colored quote box col-->
+
+            </div><!--testimonials row-->
+        </div>
+</body>
+</html>
